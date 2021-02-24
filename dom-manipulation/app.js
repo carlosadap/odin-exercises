@@ -54,3 +54,11 @@ const bluePink = document.createElement('p');
 bluePink.textContent = "ME TOO!";
 div2.appendChild(bluePink)
 container.appendChild(div2)
+
+// Attaching listeners to gorups of nodes
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    alert(button.id)
+  })
+})
